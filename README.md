@@ -88,7 +88,6 @@ slime /path/to/file.md
 Open on a specific monitor:
 
 ```bash
-slime /path/to/file.md
 slime /path/to/file.md --monitor 1
 ```
 
