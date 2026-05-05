@@ -73,19 +73,13 @@ make uninstall
 
 ## Run
 
-Open without a file:
+After `make install`, launch with:
 
 ```bash
-./build/slime_md_viewer
+slime
 ```
 
 Open a specific markdown file:
-
-```bash
-./build/slime_md_viewer /path/to/file.md
-```
-
-Or with the installed launcher:
 
 ```bash
 slime /path/to/file.md
@@ -94,37 +88,44 @@ slime /path/to/file.md
 Open on a specific monitor:
 
 ```bash
+slime /path/to/file.md
 slime /path/to/file.md --monitor 1
 ```
 
 Jump an already-running viewer to an anchor:
 
 ```bash
-./build/slime_md_viewer --scroll first-pass-file-map
+slime --scroll first-pass-file-map
 ```
 
 Jump a specific running viewer by PID:
 
 ```bash
-./build/slime_md_viewer --pid 12345 --scroll first-pass-file-map
+slime --pid 12345 --scroll first-pass-file-map
 ```
 
 Show information for the most recent running instance:
 
 ```bash
-./build/slime_md_viewer --info
+slime --info
 ```
 
 Dump the currently visible text from a running instance:
 
 ```bash
-./build/slime_md_viewer --dump-visible
+slime --dump-visible
 ```
 
 List known running instances:
 
 ```bash
-./build/slime_md_viewer --list-instances
+slime --list-instances
+```
+
+For local development without installing:
+
+```bash
+./build/slime_md_viewer /path/to/file.md
 ```
 
 ## Menus And Shortcuts
